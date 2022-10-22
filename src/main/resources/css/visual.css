@@ -1,0 +1,15 @@
+#MainWindow{
+    -fx-background-color: black;
+}
+
+#Input{
+    -fx-background-color: darkorange;
+    -fx-text-fill: white;
+    -fx-border-color: none;
+    -fx-prompt-text-fill: white;
+}
+
+#btnProcurar{
+    -fx-base: blue;
+    -fx-text-fill: white;
+}

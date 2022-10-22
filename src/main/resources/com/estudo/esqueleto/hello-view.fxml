@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="MainWindow" prefHeight="571.0" prefWidth="631.0" stylesheets="@../../../css/visual.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.estudo.esqueleto.HelloController">
+   <children>
+      <TextField id="Input" fx:id="input" cache="true" layoutX="131.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="374.0" promptText="Digite o ano (AAAA)" stylesheets="@../../../css/visual.css" />
+      <TableView fx:id="tableView" layoutX="3.0" layoutY="78.0" prefHeight="487.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="data" prefWidth="126.0" text="Data" />
+          <TableColumn fx:id="evento" prefWidth="498.0" text="Evento" />
+        </columns>
+      </TableView>
+      <Button id="btnProcurar" fx:id="btnProcurar" layoutX="515.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#onProcurarAction" prefHeight="36.0" prefWidth="101.0" text="Procurar" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
