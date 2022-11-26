@@ -43,9 +43,8 @@ test {
 
 jlink {
     jpackage{
-        imageOptions = ['--icon', 'C:\\Users\\wk\\Desktop\\esqueleto\\src\\main\\resources\\css\\icone.ico']
+        imageOptions = ['--icon', 'src\\main\\resources\\css\\icone.ico']
     }
-    javaHome = 'C:\\Program Files\\Java\\jdk-17.0.4'
     imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
     launcher {
